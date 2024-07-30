@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>O-results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      #banner{
+        height: 300px;
+        width: 90%;
+        object-fit: cover;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="text-center mt-2 mb-4">O-results page</h1>
+    <img class="img-fluid" id="banner" src='static/jametlene-reskp-Im7bVVKQWqg-unsplash.jpg'>
+    <h2 class="text-center">What is this?</h2>
+    <p class='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. In aliquam sem fringilla ut morbi tincidunt augue. Sit amet tellus cras adipiscing enim. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. 
+    </p>
+    <h2 class="text-center">Events</h2>
+    <p class='bodytext'>
+      {% for event in events %}
+        {% include 'eventitem.html' %}
+      {% endfor %}
+    </p>
+      <div style='text-align:center;'>
+    <button class="btn btn-primary btn-lg">Contact us!</button>
+        <p class="mt-4">Copyright MM 2024</p>
+      </div>
+    </div>
+  </body>
+</html>

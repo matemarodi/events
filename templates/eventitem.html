@@ -1,0 +1,18 @@
+<div class="border-bottom row" style="margin-bottom:8px;padding-bottom:8px;">
+  <div class="col-9">
+    <h4 style="margin-bottom:4px;">
+      {{event['title']}}
+    </h4>
+    <div>
+      <b>Location:</b> {{event['location']}}
+    </div>
+    {% if 'date' in event %}
+    <div>
+      <b>Date:</b> {{event['date']}}
+    </div>
+    {% endif %}
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-outline-primary">Register</button>
+  </div>
+</div>
